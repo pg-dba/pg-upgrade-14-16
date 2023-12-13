@@ -1,15 +1,15 @@
-# docker-postgres-upgrade 10 to 16
+# docker-postgres-upgrade 14 to 16
 
 https://github.com/tianon/docker-postgres-upgrade
 
 # Run
 
 ls -la /data/postgres<BR>
- drwxr-xr-x 4  999 docker 4096 Jan 18 18:32 10<BR>
+ drwxr-xr-x 4  999 docker 4096 Jan 18 18:32 14<BR>
  drwxr-xr-x 3  999 docker 4096 Jan 18 18:22 16<BR>
 
 cd /data/postgres/<BR>
-docker run --rm  -v /data/postgres:/var/lib/postgresql sqldbapg/pg-upgrade:10-to-16 --link
+docker run --rm  -v /data/postgres:/var/lib/postgresql sqldbapg/pg-upgrade:14-to-16 --link
 
 Your installation contains extensions that should be updated<BR>
 with the ALTER EXTENSION command.  The file <B>update_extensions.sql</B><BR>
