@@ -1,4 +1,4 @@
-FROM postgres:16-bookworm
+FROM postgres:16-bullseye
 
 RUN sed -i 's/$/ 14/' /etc/apt/sources.list.d/pgdg.list
 
